@@ -69,42 +69,42 @@ const Features = () => {
 
             <div className="container mx-auto px-6 text-center mb-16 md:mb-24 animate-on-scroll">
                 <h2 className="font-semibold text-white mb-4 md:mb-6">Our Services</h2>
-                <p className="text-white/40 max-w-2xl mx-auto font-medium leading-relaxed">Empowering your digital presence with industry-leading technology and creative excellence.</p>
+                <p className="text-white/40 max-w-2xl mx-auto leading-relaxed">Empowering your digital presence with industry-leading technology and creative excellence.</p>
             </div>
 
             <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 {services.map((service, i) => (
                     <div
                         key={i}
-                        className="glass-card group p-6 md:p-8 rounded-[32px] border border-white/5 hover:border-red-500/20 transition-all duration-500 relative overflow-hidden animate-on-scroll"
+                        className="glass-card group p-6 md:p-8 rounded-[32px] border border-red-500/20 hover:border-red-500/40 transition-all duration-500 relative overflow-hidden animate-on-scroll hover:-translate-y-2"
                         style={{ transitionDelay: `${i * 100}ms` }}
                     >
-                        {/* Hover Gradient Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-red-500/0 to-red-500/0 group-hover:from-red-500/[0.03] group-hover:to-transparent transition-all duration-500"></div>
+                        {/* Static Gradient Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-red-500/[0.03] to-transparent transition-all duration-500"></div>
 
                         <div className="relative z-10">
-                            <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-red-500/10 group-hover:border-red-500/20 transition-all duration-500 shadow-xl shadow-red-500/0 group-hover:shadow-red-500/5">
+                            <div className="w-14 h-14 rounded-2xl bg-red-500/10 border border-red-500/20 flex items-center justify-center mb-8 scale-110 transition-all duration-500 shadow-xl shadow-red-500/5">
                                 {service.icon}
                             </div>
 
-                            <h3 className="font-semibold text-white mb-4 tracking-tight group-hover:text-red-500 transition-colors duration-300">
+                            <h3 className="text-xl md:text-2xl font-semibold text-white mb-4 tracking-tight transition-colors duration-300 group-hover:text-red-500">
                                 {service.title}
                             </h3>
 
-                            <p className="text-white/40 leading-relaxed font-medium group-hover:text-white/60 transition-colors duration-300">
+                            <p className="text-white/60 leading-relaxed transition-colors duration-300">
                                 {service.description}
                             </p>
 
-                            <div className="mt-8 pt-8 border-t border-white/5 flex items-center gap-2 text-white/20 group-hover:text-red-500 transition-all duration-500 text-sm font-bold uppercase tracking-widest overflow-hidden">
-                                <span className="transform translate-x-[-120%] group-hover:translate-x-0 transition-transform duration-500">Explore Solution</span>
-                                <svg className="w-4 h-4 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 delay-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <div className="mt-8 pt-8 border-t border-white/5 flex items-center gap-2 text-red-500 transition-all duration-500 text-sm font-bold uppercase tracking-widest overflow-hidden">
+                                <span className="transform translate-x-0 transition-transform duration-500">Explore Solution</span>
+                                <svg className="w-4 h-4 transform translate-x-0 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
                             </div>
                         </div>
 
-                        {/* Animated Border Reveal Effect */}
-                        <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-transparent via-red-500 to-transparent group-hover:w-full transition-all duration-700"></div>
+                        {/* Static Border Reveal Effect */}
+                        <div className="absolute bottom-0 left-0 h-[2px] w-full bg-gradient-to-r from-transparent via-red-500 to-transparent transition-all duration-700"></div>
                     </div>
                 ))}
             </div>

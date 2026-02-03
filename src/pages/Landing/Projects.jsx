@@ -46,7 +46,7 @@ const Projects = () => {
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8 animate-on-scroll">
                     <div className="max-w-2xl">
                         <h2 className="font-semibold text-white mb-6">Latest Projects</h2>
-                        <p className="text-white/40 font-medium leading-relaxed">
+                        <p className="text-white/40 leading-relaxed">
                             Discover our latest work where innovation meets execution. We craft digital experiences that redefine industry standards.
                         </p>
                     </div>
@@ -59,14 +59,14 @@ const Projects = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, i) => (
-                        <div 
-                            key={i} 
+                        <div
+                            key={i}
                             className="group relative rounded-[32px] overflow-hidden bg-white/5 border border-white/5 hover:border-red-500/30 transition-all duration-500 animate-on-scroll"
                             style={{ transitionDelay: `${i * 100}ms` }}
                         >
                             <div className="aspect-[4/3] overflow-hidden">
-                                <img 
-                                    src={project.image} 
+                                <img
+                                    src={project.image}
                                     alt={project.title}
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                                 />

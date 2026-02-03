@@ -49,7 +49,7 @@ const CTA = () => {
                     Ready to launch <br /> your <span className="text-red-500 font-newsreader italic font-normal">vision?</span>
                 </h2>
 
-                <p className="body-large text-white/40 font-medium mb-14 max-w-2xl mx-auto relative z-10 capitalize">
+                <p className="body-large text-white/40 mb-14 max-w-2xl mx-auto relative z-10 capitalize">
                     Join the list of manufacturers and designers shipping with Aura today.
                 </p>
 

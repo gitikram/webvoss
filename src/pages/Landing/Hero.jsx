@@ -50,10 +50,10 @@ const Hero = () => {
                 </div>
 
                 <h1 className="display-text font-semibold text-white mb-6 md:mb-8 font-aura-header">
-                    Design your <span className="font-newsreader italic font-normal text-white">vision</span> with <br className="hidden md:block" /> creative excellence
+                    Design your <span className="font-newsreader italic font-normal text-red-500">vision</span> with <br className="hidden md:block" /> creative excellence
                 </h1>
 
-                <p className="body-large text-white/40 mb-10 md:mb-14 max-w-2xl mx-auto font-medium leading-relaxed">
+                <p className="body-large text-white/40 mb-10 md:mb-14 max-w-2xl mx-auto leading-relaxed">
                     Get an intuitive experience for shipping and monitoring your products, helping you build faster than ever before.
                 </p>
 

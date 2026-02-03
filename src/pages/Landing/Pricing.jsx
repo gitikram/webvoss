@@ -28,7 +28,7 @@ const Pricing = () => {
             <div className="container mx-auto px-6 text-center mb-16 md:mb-24 animate-on-scroll">
                 <span className="text-red-500 font-bold uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4 md:mb-6 block">Pricing</span>
                 <h2 className="font-semibold text-white mb-4 md:mb-6">Simple, transparent <span className="text-red-500 font-newsreader italic font-normal">pricing</span></h2>
-                <p className="text-white/40 max-w-2xl mx-auto font-medium leading-relaxed">Choose the plan that fits your growth and creative excellence.</p>
+                <p className="text-white/40 max-w-2xl mx-auto leading-relaxed">Choose the plan that fits your growth and creative excellence.</p>
             </div>
 
             <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl">
@@ -38,7 +38,7 @@ const Pricing = () => {
                             <span className="absolute top-0 right-12 -translate-y-1/2 px-4 py-1.5 bg-red-500 rounded-full text-[10px] font-bold text-white tracking-widest uppercase shadow-xl shadow-red-500/20">Popular</span>
                         )}
                         <h3 className="text-2xl font-semibold text-white mb-2">{p.name}</h3>
-                        <p className="text-white/40 text-sm font-medium mb-10">Best for growing teams and startups.</p>
+                        <p className="text-white/40 text-sm mb-10">Best for growing teams and startups.</p>
 
                         <div className="flex items-baseline gap-1 mb-10">
                             <h1 className="font-bold text-white tracking-tighter">${p.price}</h1>

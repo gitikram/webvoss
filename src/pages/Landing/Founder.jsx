@@ -1,5 +1,5 @@
 import React from 'react';
-import founderImg from '../assets/founder.png';
+import founderImg from '../../assets/founder.png';
 
 const Founder = () => {
     return (
@@ -25,7 +25,7 @@ const Founder = () => {
                             Meet the founder and <span className="text-red-500 font-newsreader italic font-normal">CEO</span> of Webvoss
                         </h2>
 
-                        <div className="space-y-6 text-white/50 font-medium leading-relaxed mb-10">
+                        <div className="space-y-6 text-white/50 leading-relaxed mb-10">
                             <p>
                                 Driven by a passion for creative excellence and technological innovation, our founder envisioned Webvoss as a bridge between complex code and intuitive design.
                             </p>
@@ -36,7 +36,7 @@ const Founder = () => {
 
                         <div className="flex items-center gap-6">
                             <div className="flex flex-col">
-                                <span className="text-white font-bold text-lg md:text-xl">Ariful Islam</span>
+                                <span className="text-white font-bold text-lg md:text-xl">Ikram Hossen</span>
                                 <span className="text-white/30 text-[10px] md:text-xs uppercase tracking-[0.2em]">Founder & CEO</span>
                             </div>
                             <div className="h-12 w-[1px] bg-white/10"></div>

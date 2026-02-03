@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -24,27 +25,27 @@ const Footer = () => {
                     <div>
                         <h4 className="text-white font-bold mb-8 tracking-tight">Product</h4>
                         <ul className="space-y-4 text-white/30 text-sm font-bold">
-                            <li><a href="#features" className="hover:text-white transition-colors">Services</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Changelog</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Integrations</a></li>
+                            <li><Link to="/#features" className="hover:text-white transition-colors">Services</Link></li>
+                            <li><Link to="/#pricing" className="hover:text-white transition-colors">Pricing</Link></li>
+                            <li><Link to="#" className="hover:text-white transition-colors">Changelog</Link></li>
+                            <li><Link to="#" className="hover:text-white transition-colors">Integrations</Link></li>
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="text-white font-bold mb-8 tracking-tight">Company</h4>
                         <ul className="space-y-4 text-white/30 text-sm font-bold">
-                            <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
+                            <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
+                            <li><Link to="#" className="hover:text-white transition-colors">Careers</Link></li>
+                            <li><Link to="#" className="hover:text-white transition-colors">Blog</Link></li>
                         </ul>
                     </div>
 
                     <div>
                         <h4 className="text-white font-bold mb-8 tracking-tight">Legal</h4>
                         <ul className="space-y-4 text-white/30 text-sm font-bold">
-                            <li><a href="#" className="hover:text-white transition-colors">Privacy</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Terms</a></li>
+                            <li><Link to="#" className="hover:text-white transition-colors">Privacy</Link></li>
+                            <li><Link to="#" className="hover:text-white transition-colors">Terms</Link></li>
                         </ul>
                     </div>
                 </div>
