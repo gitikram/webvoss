@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Button from '../../components/Button';
 import Hls from 'hls.js';
 
 const Hero = () => {
@@ -58,9 +59,9 @@ const Hero = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8">
-                    <button className="shiny-cta-red w-full sm:w-auto">
+                    <Button className="w-full sm:w-auto">
                         Start Building
-                    </button>
+                    </Button>
                     <button className="text-white/60 font-bold hover:text-white transition-colors flex items-center gap-2 group">
                         View Live Demo
                         <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">

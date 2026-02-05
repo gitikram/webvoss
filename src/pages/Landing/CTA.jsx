@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Button from '../../components/Button';
 import Hls from 'hls.js';
 
 const CTA = () => {
@@ -54,9 +55,9 @@ const CTA = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8 relative z-10">
-                    <button className="shiny-cta-red w-full sm:w-auto !px-16 !py-5 md:!text-lg">
+                    <Button className="w-full sm:w-auto !px-16 !py-5 md:!text-lg">
                         Get Started Now
-                    </button>
+                    </Button>
                     <a href="#" className="text-white/60 font-bold hover:text-white transition-colors group">
                         Talk to an expert <span className="group-hover:translate-x-1 inline-block transition-transform">→</span>
                     </a>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../../components/Button';
 
 const projects = [
     {
@@ -51,9 +52,9 @@ const Projects = () => {
                         </p>
                     </div>
                     <div className="hidden md:block">
-                        <button className="px-8 py-4 rounded-full border border-white/10 text-white font-semibold hover:bg-white/5 transition-all duration-300">
+                        <Button to="/projects">
                             View All Projects
-                        </button>
+                        </Button>
                     </div>
                 </div>
 
@@ -98,10 +99,10 @@ const Projects = () => {
                     ))}
                 </div>
 
-                <div className="mt-12 md:hidden text-center">
-                    <button className="px-8 py-4 rounded-full border border-white/10 text-white font-semibold hover:bg-white/5 transition-all duration-300 w-full">
+                <div className="mt-12 md:hidden text-center flex justify-center">
+                    <Button to="/projects" className="w-full sm:w-auto">
                         View All Projects
-                    </button>
+                    </Button>
                 </div>
             </div>
         </section>
