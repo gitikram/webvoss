@@ -180,7 +180,7 @@ html {
 
 .marquee-content {
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
     width: max-content;
     animation: marquee-scroll 30s linear infinite;
     align-items: center;

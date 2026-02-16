@@ -1,44 +1,22 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import Button from '../../components/Button';
-import Hls from 'hls.js';
+import backgroundVideo from '../../assets/background-video.mp4';
 
 const Hero = () => {
-    const videoRef = useRef(null);
-    const videoUrl = "https://customer-cbeadsgr09pnsezs.cloudflarestream.com/74cb72d57c6a6d6d7807693d02e6707b/manifest/video.m3u8";
-
-    useEffect(() => {
-        let hls;
-        if (videoRef.current) {
-            const video = videoRef.current;
-            if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                // Safari and iOS support HLS natively
-                video.src = videoUrl;
-            } else if (Hls.isSupported()) {
-                // Use hls.js for other browsers
-                hls = new Hls();
-                hls.loadSource(videoUrl);
-                hls.attachMedia(video);
-            }
-        }
-        return () => {
-            if (hls) {
-                hls.destroy();
-            }
-        };
-    }, [videoUrl]);
 
     return (
         <section className="relative min-h-[90vh] md:min-h-screen flex flex-col items-center justify-center pt-32 pb-20 overflow-hidden">
             {/* Background Video */}
             <div className="absolute inset-0 z-0">
                 <video
-                    ref={videoRef}
                     autoPlay
                     muted
                     loop
                     playsInline
                     className="w-full h-full object-cover opacity-100"
-                />
+                >
+                    <source src={backgroundVideo} type="video/mp4" />
+                </video>
                 {/* Dynamic Overlay for Text Contrast */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]/40"></div>
             </div>

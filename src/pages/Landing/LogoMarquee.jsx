@@ -6,7 +6,7 @@ const logos = [
 
 const LogoMarquee = () => {
     return (
-        <section className="py-12 bg-transparent overflow-hidden">
+        <section className="py-[5em] bg-transparent overflow-hidden">
             <div className="marquee-container opacity-20">
                 <div className="marquee-content py-4">
                     {[...logos, ...logos].map((logo, index) => (

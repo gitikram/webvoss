@@ -62,7 +62,7 @@ const services = [
 
 const Features = () => {
     return (
-        <section id="features" className="py-20 md:py-32 relative overflow-hidden">
+        <section id="features" className="py-[5em] relative overflow-hidden">
             {/* Background Accents */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-red-500/5 blur-[120px] rounded-full -mr-64 -mt-64"></div>
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-red-500/5 blur-[120px] rounded-full -ml-64 -mb-64"></div>

@@ -1,48 +1,25 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import Button from '../../components/Button';
-import Hls from 'hls.js';
+import rocketLaunchVideo from '../../assets/rocket-launch-video.mp4';
 
 const CTA = () => {
-    const videoRef = useRef(null);
-    const videoUrl = "https://customer-cbeadsgr09pnsezs.cloudflarestream.com/b17f76a1270818e8cdc55e8719b9ace8/manifest/video.m3u8";
-
-    useEffect(() => {
-        let hls;
-        if (videoRef.current) {
-            const video = videoRef.current;
-            if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                // Safari and iOS support HLS natively
-                video.src = videoUrl;
-            } else if (Hls.isSupported()) {
-                // Use hls.js for other browsers
-                hls = new Hls();
-                hls.loadSource(videoUrl);
-                hls.attachMedia(video);
-            }
-        }
-        return () => {
-            if (hls) {
-                hls.destroy();
-            }
-        };
-    }, [videoUrl]);
-
     return (
-        <section className="py-20 md:py-24 px-4 overflow-hidden relative">
+        <section className="py-[5em] px-4 overflow-hidden relative">
             <div className="max-w-6xl mx-auto glass-card p-10 md:p-32 rounded-[48px] md:rounded-[64px] text-center relative overflow-hidden animate-on-scroll">
                 {/* Background Video */}
                 <div className="absolute inset-0 z-0">
                     <video
-                        ref={videoRef}
                         autoPlay
                         muted
                         loop
                         playsInline
-                        className="w-full h-full object-cover opacity-100"
-                    />
+                        className="w-full h-full object-cover opacity-30"
+                    >
+                        <source src={rocketLaunchVideo} type="video/mp4" />
+                    </video>
                 </div>
 
-                {/* Background Glows (kept but placed above video) */}
+                {/* Background Glows */}
                 <div className="absolute top-0 right-0 w-80 h-80 bg-red-600/10 blur-[100px] z-[1]"></div>
                 <div className="absolute bottom-0 left-0 w-80 h-80 bg-red-600/5 blur-[100px] z-[1]"></div>
 
