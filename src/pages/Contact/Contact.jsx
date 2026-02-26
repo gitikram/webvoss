@@ -65,7 +65,7 @@ const Contact = () => {
     return (
         <div className="bg-[#050505] min-h-screen text-white">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden items-center justify-center flex flex-col bg-grid-white">
+            <section className="hero-section relative overflow-hidden items-center justify-center flex flex-col bg-grid-white">
                 {/* Blobs */}
                 <div className="absolute top-1/4 left-1/4 w-64 md:w-96 h-64 md:h-96 bg-red-600/20 rounded-full blur-[80px] md:blur-[100px] animate-float pointer-events-none" />
                 <div className="absolute bottom-1/4 right-1/4 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-red-600/10 rounded-full blur-[80px] md:blur-[120px] animate-float-delayed pointer-events-none" />
@@ -107,7 +107,7 @@ const Contact = () => {
             </section>
 
             {/* FAQ & Quick Contact Section */}
-            <section className="py-20 px-6 container mx-auto">
+            <section className="section-padding px-6 container mx-auto">
                 <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start max-w-6xl mx-auto">
                     {/* Left Column: Title & Quick Card */}
                     <div className="w-full lg:w-1/3 lg:sticky lg:top-32">

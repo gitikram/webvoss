@@ -3,7 +3,7 @@ import founderImg from '../../assets/founder.png';
 
 const Founder = () => {
     return (
-        <section className="py-[5em] relative overflow-hidden">
+        <section className="section-padding relative overflow-hidden">
             <div className="container mx-auto px-6 max-w-7xl">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     {/* Left Column: Image */}

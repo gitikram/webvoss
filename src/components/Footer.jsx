@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="py-16 md:py-24 border-t border-white/5 relative bg-background overflow-hidden">
+        <footer className="pt-16 md:pt-20 pb-4 md:pb-6 border-t border-white/5 relative bg-background overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-16 mb-16 md:mb-24 animate-on-scroll">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-16 mb-8 md:mb-10 animate-on-scroll">
                     {/* Column 1: Logo, Text & Social Icons */}
                     <div>
                         <div className="flex items-center gap-2 mb-8">
@@ -77,11 +77,13 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="pt-8 flex flex-col items-center">
-                    <div className="text-[22vw] font-bold leading-none select-none tracking-tighter text-footer-outline lowercase">
-                        webvoss
+                <div className="pt-2 flex flex-col items-center">
+                    <div className="-mx-6 w-[calc(100%+3rem)] overflow-hidden">
+                        <div className="text-[26vw] font-bold leading-none select-none tracking-tighter text-footer-outline lowercase text-center">
+                            webvoss
+                        </div>
                     </div>
-                    <p className="text-white/40 text-sm mt-8 font-montserrat">
+                    <p className="text-white/40 text-sm mt-4 font-montserrat">
                         © 2026 webvoss Design Labs. All rights reserved.
                     </p>
                 </div>

@@ -61,7 +61,7 @@ const projectsData = [
 
 const ProjectCTA = () => {
     return (
-        <section className="py-20 md:py-24 px-4 overflow-hidden relative">
+        <section className="section-padding px-4 overflow-hidden relative">
             <div className="max-w-6xl mx-auto glass-card p-10 md:p-32 rounded-[48px] md:rounded-[64px] text-center relative overflow-hidden animate-on-scroll">
                 {/* Background Video */}
                 <div className="absolute inset-0 z-0">
@@ -130,7 +130,7 @@ const Project = () => {
     return (
         <div className="bg-[#050505] min-h-screen text-white">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden items-center justify-center flex flex-col bg-grid-white">
+            <section className="hero-section relative overflow-hidden items-center justify-center flex flex-col bg-grid-white">
                 {/* Blobs */}
                 <div className="absolute top-1/4 left-1/4 w-64 md:w-96 h-64 md:h-96 bg-red-600/20 rounded-full blur-[80px] md:blur-[100px] animate-float pointer-events-none" />
                 <div className="absolute bottom-1/4 right-1/4 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-red-600/10 rounded-full blur-[80px] md:blur-[120px] animate-float-delayed pointer-events-none" />
@@ -148,7 +148,7 @@ const Project = () => {
             </section>
 
             {/* Showcase Section */}
-            <section className="py-20 px-6 container mx-auto">
+            <section className="section-padding px-6 container mx-auto">
                 {/* Filter Tabs */}
                 <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-16 px-2">
                     {categories.map((cat) => (

@@ -94,6 +94,33 @@ html {
     /* Standard Body - 16px to 18px */
     --fs-sm: 0.875rem;
     --fs-xs: 0.75rem;
+
+    /* ─── Global Section Spacing ─────────────────────────────────────────────
+       Single source of truth for vertical section padding across the entire site.
+       To tighten or loosen ALL section gaps, only edit values here.
+       Mobile min: 3.75rem (60px) → Desktop max: 6.25rem (100px), fluid.
+    */
+    --section-py: clamp(3.75rem, 3rem + 2.5vw, 5rem);
+
+    /* Inner-page hero: top clears the fixed navbar, bottom flows into next section.
+       pt: 6rem (96px) → 8rem (128px) | pb: 3rem (48px) → 5rem (80px)
+    */
+    --hero-pt: clamp(6rem, 5rem + 5vw, 8rem);
+    --hero-pb: clamp(3rem, 2.5rem + 2.5vw, 5rem);
+}
+
+/* ─── Section Spacing Utilities ──────────────────────────────────────────────
+   Apply .section-padding to every <section> to use the global spacing system.
+   Apply .hero-section to inner-page hero sections (About, Contact, Feedback, etc.)
+*/
+.section-padding {
+    padding-top: var(--section-py);
+    padding-bottom: var(--section-py);
+}
+
+.hero-section {
+    padding-top: var(--hero-pt);
+    padding-bottom: var(--hero-pb);
 }
 
 /* Red Vertical Beams */

@@ -27,7 +27,7 @@ const teamMembers = [
 
 const AboutCTA = () => {
     return (
-        <section className="py-20 md:py-24 px-4 overflow-hidden relative">
+        <section className="section-padding px-4 overflow-hidden relative">
             <div className="max-w-6xl mx-auto glass-card p-10 md:p-32 rounded-[48px] md:rounded-[64px] text-center relative overflow-hidden animate-on-scroll">
 
                 {/* Background Glows */}
@@ -82,7 +82,7 @@ const About = () => {
     return (
         <div className="bg-[#050505] min-h-screen text-white">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden items-center justify-center flex flex-col bg-grid-white">
+            <section className="hero-section relative overflow-hidden items-center justify-center flex flex-col bg-grid-white">
                 {/* Blobs */}
                 <div className="absolute top-1/4 left-1/4 w-64 md:w-96 h-64 md:h-96 bg-red-600/20 rounded-full blur-[80px] md:blur-[100px] animate-float pointer-events-none" />
                 <div className="absolute bottom-1/4 right-1/4 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-red-600/10 rounded-full blur-[80px] md:blur-[120px] animate-float-delayed pointer-events-none" />
@@ -103,7 +103,7 @@ const About = () => {
             <Founder />
 
             {/* Content Section: Mission & Story */}
-            <section className="py-20 px-6 container mx-auto">
+            <section className="section-padding px-6 container mx-auto">
                 <div className="flex flex-col md:flex-row gap-16 md:gap-24 items-start max-w-6xl mx-auto mb-32 animate-on-scroll">
                     <div className="w-full md:w-1/2">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6 font-aura-header">Crafting the Future of Web</h2>

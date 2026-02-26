@@ -4,7 +4,7 @@ import rocketLaunchVideo from '../../assets/rocket-launch-video.mp4';
 
 const CTA = () => {
     return (
-        <section className="py-[5em] px-4 overflow-hidden relative">
+        <section className="section-padding px-4 overflow-hidden relative">
             <div className="max-w-6xl mx-auto glass-card p-10 md:p-32 rounded-[48px] md:rounded-[64px] text-center relative overflow-hidden animate-on-scroll">
                 {/* Background Video */}
                 <div className="absolute inset-0 z-0">

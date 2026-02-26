@@ -95,7 +95,7 @@ const logos = [
 
 const LogoMarquee = () => {
     return (
-        <div className="w-full place-content-center py-[5em] bg-transparent">
+        <div className="w-full place-content-center section-padding bg-transparent">
             <div
                 aria-hidden="true"
                 className={cn(

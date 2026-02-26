@@ -85,7 +85,7 @@ const TestimonialCard = ({ t }) => (
 
 const FeedbackCTA = () => {
     return (
-        <section className="py-20 md:py-24 px-4 overflow-hidden relative">
+        <section className="section-padding px-4 overflow-hidden relative">
             <div className="max-w-6xl mx-auto glass-card p-10 md:p-32 rounded-[48px] md:rounded-[64px] text-center relative overflow-hidden animate-on-scroll">
                 {/* Background Glows */}
                 <div className="absolute top-0 right-0 w-80 h-80 bg-red-600/10 blur-[100px] z-[1]"></div>
@@ -145,7 +145,7 @@ const Feedback = () => {
     return (
         <div className="bg-[#050505] min-h-screen text-white">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden items-center justify-center flex flex-col bg-grid-white">
+            <section className="hero-section relative overflow-hidden items-center justify-center flex flex-col bg-grid-white">
                 {/* Blobs */}
                 <div className="absolute top-1/4 left-1/4 w-64 md:w-96 h-64 md:h-96 bg-red-600/20 rounded-full blur-[80px] md:blur-[100px] animate-float pointer-events-none" />
                 <div className="absolute bottom-1/4 right-1/4 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-red-600/10 rounded-full blur-[80px] md:blur-[120px] animate-float-delayed pointer-events-none" />
@@ -163,7 +163,7 @@ const Feedback = () => {
             </section>
 
             {/* Feedback Carousels */}
-            <section className="py-20 relative overflow-hidden">
+            <section className="section-padding relative overflow-hidden">
                 <div className="flex flex-col gap-8 md:gap-12">
                     {/* Row 1 - Left to Right */}
                     <div className="marquee-container animate-on-scroll">

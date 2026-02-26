@@ -7,6 +7,7 @@ import About from './pages/About/About';
 import Project from './pages/Project/Project';
 import Feedback from './pages/Feedback/Feedback';
 import Contact from './pages/Contact/Contact';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
     useEffect(() => {
@@ -34,6 +35,7 @@ function App() {
     return (
         <Router>
             <div className="min-h-screen bg-[#050505] text-white font-montserrat selection:bg-red-500/30">
+                <ScrollToTop />
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Landing />} />

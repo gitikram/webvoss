@@ -24,7 +24,7 @@ const plans = [
 
 const Pricing = () => {
     return (
-        <section id="pricing" className="py-[5em] relative">
+        <section id="pricing" className="section-padding relative">
             <div className="container mx-auto px-6 text-center mb-16 md:mb-24 animate-on-scroll">
                 <span className="text-red-500 font-bold uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4 md:mb-6 block">Pricing</span>
                 <h2 className="font-semibold text-white mb-4 md:mb-6">Simple, transparent <span className="text-red-500 font-newsreader italic font-normal">pricing</span></h2>
