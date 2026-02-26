@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Button from '../../components/Button';
+import redAbstracSpining from '../../assets/red-abstrac-spining.mp4';
 
 const categories = [
     "All",
@@ -62,10 +63,18 @@ const ProjectCTA = () => {
     return (
         <section className="py-20 md:py-24 px-4 overflow-hidden relative">
             <div className="max-w-6xl mx-auto glass-card p-10 md:p-32 rounded-[48px] md:rounded-[64px] text-center relative overflow-hidden animate-on-scroll">
-
-                {/* Background Glows */}
-                <div className="absolute top-0 right-0 w-80 h-80 bg-red-600/10 blur-[100px] z-[1]"></div>
-                <div className="absolute bottom-0 left-0 w-80 h-80 bg-red-600/5 blur-[100px] z-[1]"></div>
+                {/* Background Video */}
+                <div className="absolute inset-0 z-0">
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-cover opacity-30"
+                    >
+                        <source src={redAbstracSpining} type="video/mp4" />
+                    </video>
+                </div>
 
                 <h2 className="display-text font-semibold text-white mb-10 tracking-tighter leading-tight relative z-10 font-aura-header">
                     Ready to launch <br /> your <span className="text-red-500 font-newsreader italic font-normal">vision?</span>

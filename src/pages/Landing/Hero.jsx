@@ -25,7 +25,7 @@ const Hero = () => {
             <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/5 bg-white/5 backdrop-blur-md mb-8 md:mb-10">
                     <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                    <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-white/50">Our Services are Now Live</span>
+                    <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-white/50">AI Web Design Agency</span>
                 </div>
 
                 <h1 className="display-text font-semibold text-white mb-6 md:mb-8 font-aura-header">

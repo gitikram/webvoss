@@ -41,7 +41,7 @@ const testimonials = [
 ];
 
 const TestimonialCard = ({ t }) => (
-    <div className="w-[350px] md:w-[400px] flex-shrink-0 p-6 md:p-8 rounded-[24px] md:rounded-[32px] bg-[#0a0a0a]/80 border border-white/5 hover:border-red-500/30 transition-all duration-300 relative overflow-hidden backdrop-blur-sm">
+    <div className="w-[350px] md:w-[400px] flex-shrink-0 p-6 md:p-8 rounded-[24px] md:rounded-[32px] bg-[#0a0a0a]/80 border border-red-500/30 transition-all duration-300 relative overflow-hidden backdrop-blur-sm flex flex-col h-[280px]">
         {/* 5-Star Rating */}
         <div className="flex items-center gap-1 mb-4">
             {[...Array(5)].map((_, i) => (
@@ -50,8 +50,8 @@ const TestimonialCard = ({ t }) => (
                 </svg>
             ))}
         </div>
-        <p className="text-white/80 mb-6 md:mb-8 leading-relaxed text-sm md:text-base">"{t.text}"</p>
-        <div className="flex items-center gap-4">
+        <p className="text-white/80 mb-6 md:mb-8 leading-relaxed text-sm md:text-base flex-grow">"{t.text}"</p>
+        <div className="flex items-center gap-4 mt-auto">
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex items-center justify-center text-white text-xs font-bold">
                 {t.avatar}
             </div>
