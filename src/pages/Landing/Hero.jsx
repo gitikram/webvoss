@@ -22,10 +22,10 @@ const Hero = () => {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+            <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/5 bg-white/5 backdrop-blur-md mb-8 md:mb-10">
                     <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                    <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-white/50">AI Web Design Agency</span>
+                    <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-white/50">AI-Powered Digital Agency</span>
                 </div>
 
                 <h1 className="display-text font-semibold text-white mb-6 md:mb-8 font-aura-header">
@@ -33,15 +33,15 @@ const Hero = () => {
                 </h1>
 
                 <p className="body-large text-white/40 mb-10 md:mb-14 max-w-2xl mx-auto leading-relaxed">
-                    Get an intuitive experience for shipping and monitoring your products, helping you build faster than ever before.
+                    We design and develop world-class websites and mobile apps powered by AI. Experience fast, beautiful solutions built to scale and grow your business.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8">
                     <Button className="w-full sm:w-auto">
-                        Start Building
+                        Schedule a Call
                     </Button>
                     <button className="text-white/60 font-bold hover:text-white transition-colors flex items-center gap-2 group">
-                        View Live Demo
+                        View Our Work
                         <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>

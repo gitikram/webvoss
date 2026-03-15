@@ -3,45 +3,45 @@ import Button from '../../components/Button';
 
 const testimonials = [
     {
-        text: "Aura has transformed how we monitor our deployments. The visibility is simply unparalleled.",
-        name: "Alex Rivera",
-        role: "CTO at Nexus",
-        avatar: "A"
-    },
-    {
-        text: "The most intuitive platform I've used in years. It just works.",
-        name: "Sarah Chen",
-        role: "Lead Engineer",
-        avatar: "S"
-    },
-    {
-        text: "Finally a tool that understands the developer workflow.",
-        name: "Jordan Lee",
-        role: "Senior Developer",
+        text: "Webvoss transformed our online presence. Our new website is beautifully fast, and our conversions increased by over 40% in the first month.",
+        name: "James Thornton",
+        role: "CEO, NovaBridge",
         avatar: "J"
     },
     {
-        text: "Beautiful design and even better functionality. A must-have.",
-        name: "Elena Rossi",
-        role: "Design Lead",
-        avatar: "E"
+        text: "The team understood exactly what we needed. They delivered a stunning WordPress site on time and completely exceeded our expectations.",
+        name: "Aisha Rahman",
+        role: "Marketing Director, GreenLeaf Co.",
+        avatar: "A"
     },
     {
-        text: "The support team is incredible. They really care about your success.",
-        name: "Mark Wilson",
-        role: "Founder",
-        avatar: "M"
+        text: "Their AI-powered SEO strategy took us from page 5 to page 1 on Google within three months. The results speak for themselves.",
+        name: "Liam Nguyen",
+        role: "Founder, TrendPeak",
+        avatar: "L"
     },
     {
-        text: "Shipping faster than ever thanks to Aura.",
-        name: "David Kim",
-        role: "Product Manager",
-        avatar: "D"
+        text: "Professional, creative, and incredibly responsive. Webvoss built our custom mobile app in record time with exceptional quality throughout.",
+        name: "Sophie Becker",
+        role: "Product Lead, Nexora",
+        avatar: "S"
+    },
+    {
+        text: "We hired Webvoss for a full redesign and the result is stunning. Every single detail was handled with precision and care.",
+        name: "Carlos Mendez",
+        role: "Co-Founder, Urbane Labs",
+        avatar: "C"
+    },
+    {
+        text: "From our Webflow site to our AI marketing strategy, Webvoss delivered on every front. They feel like a true extension of our team.",
+        name: "Nina Park",
+        role: "CMO, Brightline Agency",
+        avatar: "N"
     }
 ];
 
 const TestimonialCard = ({ t }) => (
-    <div className="w-[350px] md:w-[400px] flex-shrink-0 p-6 md:p-8 rounded-[24px] md:rounded-[32px] bg-[#0a0a0a]/80 border border-red-500/30 transition-all duration-300 relative overflow-hidden backdrop-blur-sm flex flex-col h-[280px]">
+    <div className="w-[350px] md:w-[400px] flex-shrink-0 p-4 md:p-6 rounded-[24px] md:rounded-[32px] bg-[#0a0a0a]/80 border border-red-500/30 transition-all duration-300 relative overflow-hidden backdrop-blur-sm flex flex-col min-h-[200px]">
         {/* 5-Star Rating */}
         <div className="flex items-center gap-1 mb-4">
             {[...Array(5)].map((_, i) => (
@@ -77,12 +77,13 @@ const Testimonials = () => {
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-red-500/5 rounded-full blur-[100px]" />
             </div>
 
-            <div className="container mx-auto px-6 text-center mb-16 md:mb-24 relative z-10">
+            <div className="container mx-auto px-6 max-w-6xl text-center mb-16 md:mb-24 relative z-10">
+                <span className="text-red-500 font-bold uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4 md:mb-6 block">Client Stories</span>
                 <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">
-                    Loved by <span className="font-newsreader italic font-normal text-red-500">passionate</span> builders
+                    Trusted by businesses <span className="font-newsreader italic font-normal text-red-500">worldwide</span>
                 </h2>
                 <p className="text-white/40 max-w-2xl mx-auto leading-relaxed text-sm md:text-base">
-                    Choose the plan that fits your growth and creative excellence.
+                    Real results from real clients. Here’s what our partners say about working with Webvoss.
                 </p>
             </div>
 

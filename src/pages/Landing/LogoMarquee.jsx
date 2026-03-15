@@ -105,7 +105,7 @@ const LogoMarquee = () => {
                 )}
             />
 
-            <section className="relative mx-auto max-w-6xl px-4 md:px-8">
+            <section className="relative mx-auto max-w-6xl px-6">
                 <h2 className="mb-5 text-center font-bold text-white text-2xl tracking-tight md:text-3xl">
                     <span>Technologies We Work With</span>
                 </h2>

@@ -70,7 +70,7 @@ const Contact = () => {
                 <div className="absolute top-1/4 left-1/4 w-64 md:w-96 h-64 md:h-96 bg-red-600/20 rounded-full blur-[80px] md:blur-[100px] animate-float pointer-events-none" />
                 <div className="absolute bottom-1/4 right-1/4 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-red-600/10 rounded-full blur-[80px] md:blur-[120px] animate-float-delayed pointer-events-none" />
 
-                <div className="container mx-auto px-6 text-center relative z-10">
+                <div className="container mx-auto px-6 max-w-6xl text-center relative z-10">
                     <h1 className="display-text font-bold mb-6 tracking-tighter">
                         Contact <span className="text-red-500 italic font-medium font-newsreader">Us</span>
                     </h1>
@@ -107,7 +107,7 @@ const Contact = () => {
             </section>
 
             {/* FAQ & Quick Contact Section */}
-            <section className="section-padding px-6 container mx-auto">
+            <section className="section-padding px-6 container mx-auto max-w-6xl">
                 <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start max-w-6xl mx-auto">
                     {/* Left Column: Title & Quick Card */}
                     <div className="w-full lg:w-1/3 lg:sticky lg:top-32">

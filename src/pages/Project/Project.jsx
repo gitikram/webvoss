@@ -61,7 +61,7 @@ const projectsData = [
 
 const ProjectCTA = () => {
     return (
-        <section className="section-padding px-4 overflow-hidden relative">
+        <section className="section-padding px-6 overflow-hidden relative">
             <div className="max-w-6xl mx-auto glass-card p-10 md:p-32 rounded-[48px] md:rounded-[64px] text-center relative overflow-hidden animate-on-scroll">
                 {/* Background Video */}
                 <div className="absolute inset-0 z-0">
@@ -86,7 +86,7 @@ const ProjectCTA = () => {
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8 relative z-10">
                     <Button className="w-full sm:w-auto !px-16 !py-5 md:!text-lg">
-                        Get Started Now
+                        Schedule a Call
                     </Button>
                     <a href="#" className="text-white/60 font-bold hover:text-white transition-colors group">
                         Talk to an expert <span className="group-hover:translate-x-1 inline-block transition-transform">→</span>
@@ -135,7 +135,7 @@ const Project = () => {
                 <div className="absolute top-1/4 left-1/4 w-64 md:w-96 h-64 md:h-96 bg-red-600/20 rounded-full blur-[80px] md:blur-[100px] animate-float pointer-events-none" />
                 <div className="absolute bottom-1/4 right-1/4 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-red-600/10 rounded-full blur-[80px] md:blur-[120px] animate-float-delayed pointer-events-none" />
 
-                <div className="container mx-auto px-6 text-center relative z-10">
+                <div className="container mx-auto px-6 max-w-6xl text-center relative z-10">
                     <h1 className="display-text font-bold mb-6 tracking-tighter">
                         Our <span className="text-red-500 italic font-medium font-newsreader">Masterpieces</span>
                     </h1>
@@ -148,7 +148,7 @@ const Project = () => {
             </section>
 
             {/* Showcase Section */}
-            <section className="section-padding px-6 container mx-auto">
+            <section className="section-padding px-6 container mx-auto max-w-6xl">
                 {/* Filter Tabs */}
                 <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-16 px-2">
                     {categories.map((cat) => (

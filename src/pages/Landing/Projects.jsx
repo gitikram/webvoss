@@ -43,7 +43,7 @@ const projects = [
 const Projects = () => {
     return (
         <section id="projects" className="section-padding relative bg-[#050505]">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-6 max-w-6xl">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8 animate-on-scroll">
                     <div className="max-w-2xl">
                         <h2 className="font-semibold text-white mb-6">Latest Projects</h2>

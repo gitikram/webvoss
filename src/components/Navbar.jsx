@@ -12,12 +12,18 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center p-4 md:p-6 transition-all duration-300">
-            <div className={`flex flex-col w-full max-w-7xl transition-all duration-500 rounded-[32px] md:rounded-full border border-white/5 bg-black/40 backdrop-blur-2xl overflow-hidden ${isOpen ? 'max-h-[600px] px-6 py-6' : 'max-h-[80px] px-6 md:px-8 py-3'}`}>
-                <div className="flex items-center justify-between w-full">
+        <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center p-4 md:p-6 transition-all duration-300 pointer-events-none">
+            <div className={`pointer-events-auto flex flex-col w-full max-w-6xl transition-all duration-500 rounded-[32px] md:rounded-full border border-white/5 bg-[#0a0a0a]/80 backdrop-blur-2xl overflow-hidden ${isOpen ? 'max-h-[600px]' : 'max-h-[68px] md:max-h-[76px]'}`}>
+                {/* Header Row */}
+                <div className="flex items-center justify-between w-full px-6 py-4 md:px-8 md:py-4 h-[68px] md:h-[76px]">
                     {/* Logo */}
                     <Link to="/" className="flex items-center gap-2">
-                        <span className="text-xl md:text-2xl font-bold text-white tracking-tighter font-bricolage">webvoss</span>
+                        <svg className="w-7 h-7 text-red-500 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                            <line x1="14" y1="4" x2="10" y2="20" />
+                        </svg>
+                        <span className="text-xl md:text-2xl font-bold text-white tracking-tighter font-bricolage leading-none mt-0.5">webvoss</span>
                     </Link>
 
                     {/* Desktop Links */}
@@ -37,23 +43,23 @@ const Navbar = () => {
                     <div className="flex items-center gap-4">
                         {/* Desktop Only Button */}
                         <button className="hidden md:block px-8 py-2.5 text-sm font-bold bg-white text-black rounded-full hover:bg-white/90 transition-all shadow-lg shadow-white/10 active:scale-95">
-                            Book a Demo
+                            Schedule a Call
                         </button>
 
                         {/* Hamburger */}
                         <button
-                            className="flex md:hidden flex-col gap-1.5 p-1"
+                            className="flex md:hidden flex-col justify-center items-center gap-1.5 w-10 h-10 -mr-2 rounded-full hover:bg-white/5 transition-colors"
                             onClick={() => setIsOpen(!isOpen)}
                         >
-                            <span className={`w-6 h-0.5 bg-white transition-all ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-                            <span className={`w-6 h-0.5 bg-white transition-all ${isOpen ? 'opacity-0' : ''}`}></span>
-                            <span className={`w-6 h-0.5 bg-white transition-all ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+                            <span className={`w-6 h-0.5 bg-white transition-all transform origin-center ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+                            <span className={`w-6 h-0.5 bg-white transition-all transform ${isOpen ? 'opacity-0' : ''}`}></span>
+                            <span className={`w-6 h-0.5 bg-white transition-all transform origin-center ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
                         </button>
                     </div>
                 </div>
 
                 {/* Mobile Menu Content */}
-                <div className={`flex flex-col gap-6 pt-10 pb-4 md:hidden ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10 pointer-events-none'} transition-all duration-500`}>
+                <div className={`flex flex-col gap-6 px-6 pb-8 pt-4 md:hidden ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10 pointer-events-none'} transition-all duration-500`}>
                     <div className="flex flex-col gap-4">
                         {navLinks.map((link) => (
                             <Link
@@ -70,7 +76,7 @@ const Navbar = () => {
                     {/* Mobile Only Button - Now under Contact Us */}
                     <div className="pt-2">
                         <button className="w-full py-4 text-sm font-bold bg-white text-black rounded-full hover:bg-white/90 transition-all shadow-lg shadow-white/10 active:scale-95">
-                            Book a Demo
+                            Schedule a Call
                         </button>
                     </div>
                 </div>

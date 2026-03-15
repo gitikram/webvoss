@@ -50,8 +50,8 @@ const services = [
         )
     },
     {
-        title: "Programatic and AI Powerd SEO",
-        description: "Outrank the competition with automated content engines and AI-driven SEO strategies that dynamically adapt to algorithm changes in real-time.",
+        title: "Programmatic & AI-Powered SEO",
+        description: "Dominate search rankings with our AI-driven SEO strategies. We combine automation, smart content creation, and real-time data to keep you ahead of algorithm changes.",
         icon: (
             <svg className="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
@@ -67,12 +67,13 @@ const Features = () => {
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-red-500/5 blur-[120px] rounded-full -mr-64 -mt-64"></div>
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-red-500/5 blur-[120px] rounded-full -ml-64 -mb-64"></div>
 
-            <div className="container mx-auto px-6 text-center mb-16 md:mb-24 animate-on-scroll">
-                <h2 className="font-semibold text-white mb-4 md:mb-6">Our Services</h2>
-                <p className="text-white/40 max-w-2xl mx-auto leading-relaxed">Empowering your digital presence with industry-leading technology and creative excellence.</p>
+            <div className="container mx-auto px-6 max-w-6xl text-center mb-16 md:mb-24 animate-on-scroll">
+                <span className="text-red-500 font-bold uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4 md:mb-6 block">What We Offer</span>
+                <h2 className="font-semibold text-white mb-4 md:mb-6">Services built to <span className="text-red-500 font-newsreader italic font-normal">elevate</span> your brand</h2>
+                <p className="text-white/40 max-w-2xl mx-auto leading-relaxed">From stunning websites to powerful mobile apps and AI-driven SEO, we cover every corner of your digital growth.</p>
             </div>
 
-            <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <div className="container mx-auto px-6 max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 {services.map((service, i) => (
                     <div
                         key={i}

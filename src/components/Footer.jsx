@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className="pt-16 md:pt-20 pb-4 md:pb-6 border-t border-white/5 relative bg-background overflow-hidden">
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="content-container relative z-10">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-16 mb-8 md:mb-10 animate-on-scroll">
                     {/* Column 1: Logo, Text & Social Icons */}
                     <div>
@@ -12,7 +12,7 @@ const Footer = () => {
                             <span className="text-xl md:text-2xl font-bold text-white tracking-tighter font-bricolage">webvoss</span>
                         </div>
                         <p className="text-white/30 text-base max-w-xs font-medium leading-relaxed mb-8">
-                            The next generation of website building powered by creative webvoss excellence.
+                            Your AI-powered partner for web design, mobile apps, and digital growth.
                         </p>
                         <div className="flex items-center gap-6">
                             <a href="#" className="text-white/40 hover:text-white transition-colors">

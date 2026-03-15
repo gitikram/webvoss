@@ -4,7 +4,7 @@ import founderImg from '../../assets/founder.png';
 const Founder = () => {
     return (
         <section className="section-padding relative overflow-hidden">
-            <div className="container mx-auto px-6 max-w-7xl">
+            <div className="container mx-auto px-6 max-w-6xl">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     {/* Left Column: Image */}
                     <div className="relative group animate-on-scroll order-2 lg:order-1">
@@ -27,10 +27,10 @@ const Founder = () => {
 
                         <div className="space-y-6 text-white/50 leading-relaxed mb-10">
                             <p>
-                                Driven by a passion for creative excellence and technological innovation, our founder envisioned Webvoss as a bridge between complex code and intuitive design.
+                                Ikram Hossen founded Webvoss with one clear belief: every business deserves a digital presence that truly represents them. Combining a deep passion for technology, design, and strategy, he built Webvoss from the ground up as an AI-first agency.
                             </p>
                             <p className="hidden md:block">
-                                With years of experience in the industry, he leads our team with a clear mission: to empower builders and creators with the most sophisticated yet accessible AI-powered tools in the market.
+                                Today, he leads a creative and dedicated team that works tirelessly to deliver world-class web, mobile, and digital marketing solutions to clients across the globe. For Ikram, it’s never just about building websites; it’s about building results.
                             </p>
                         </div>
 
