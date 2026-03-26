@@ -9,9 +9,14 @@ const Footer = () => {
                     {/* Column 1: Logo, Text & Social Icons */}
                     <div>
                         <div className="flex items-center gap-2 mb-8">
-                            <span className="text-xl md:text-2xl font-bold text-white tracking-tighter font-bricolage">webvoss</span>
+                            <svg className="w-7 h-7 text-red-500 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                                <line x1="14" y1="4" x2="10" y2="20" />
+                            </svg>
+                            <span className="text-xl md:text-2xl font-bold text-white tracking-tighter font-bricolage leading-none mt-0.5">webvoss</span>
                         </div>
-                        <p className="text-white/30 text-base max-w-xs font-medium leading-relaxed mb-8">
+                        <p className="text-white/30 text-sm max-w-xs font-medium leading-relaxed mb-8">
                             Your AI-powered partner for web design, mobile apps, and digital growth.
                         </p>
                         <div className="flex items-center gap-6">
@@ -36,8 +41,8 @@ const Footer = () => {
 
                     {/* Column 2: Services */}
                     <div>
-                        <h4 className="text-white font-bold mb-8 tracking-tight">Services</h4>
-                        <ul className="space-y-4 text-white/30 text-sm font-bold">
+                        <h4 className="text-white font-medium mb-8 tracking-tight">Services</h4>
+                        <ul className="space-y-4 text-white/30 text-sm font-medium">
                             <li><Link to="#" className="hover:text-white transition-colors">AI Web Design</Link></li>
                             <li><Link to="#" className="hover:text-white transition-colors">Mobile Application Development</Link></li>
                             <li><Link to="#" className="hover:text-white transition-colors">Wordpress Membership Website</Link></li>
@@ -48,19 +53,19 @@ const Footer = () => {
 
                     {/* Column 3: Company */}
                     <div>
-                        <h4 className="text-white font-bold mb-8 tracking-tight">Company</h4>
-                        <ul className="space-y-4 text-white/30 text-sm font-bold">
+                        <h4 className="text-white font-medium mb-8 tracking-tight">Company</h4>
+                        <ul className="space-y-4 text-white/30 text-sm font-medium">
                             <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
                             <li><Link to="#" className="hover:text-white transition-colors">Blog</Link></li>
                             <li><Link to="#" className="hover:text-white transition-colors">Payment Policy</Link></li>
-                            <li><Link to="#" className="hover:text-white transition-colors">Hiring</Link></li>
+                            <li><Link to="#" className="hover:text-white transition-colors">Career</Link></li>
                         </ul>
                     </div>
 
                     {/* Column 4: Contact Us */}
                     <div>
-                        <h4 className="text-white font-bold mb-8 tracking-tight">Contact Us</h4>
-                        <ul className="space-y-4 text-white/30 text-sm font-bold">
+                        <h4 className="text-white font-medium mb-8 tracking-tight">Contact Us</h4>
+                        <ul className="space-y-4 text-white/30 text-sm font-medium">
                             <li className="flex items-center gap-2">
                                 <svg className="w-4 h-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -84,7 +89,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <p className="text-white/40 text-sm mt-4 font-montserrat">
-                        © 2026 webvoss Design Labs. All rights reserved.
+                        © 2026 webvoss. All rights reserved.
                     </p>
                 </div>
             </div>

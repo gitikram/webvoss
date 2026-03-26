@@ -3,6 +3,8 @@ import Button from '../../components/Button';
 import Founder from '../Landing/Founder';
 import fazlaRabbiImg from '../../assets/fazla-rabbi.png';
 import aminulIslamImg from '../../assets/aminul-islam.png';
+import mahbubullaImg from '../../assets/mahbubulla.png';
+import sharifulIslamImg from '../../assets/shariful-islam.png';
 
 // --- Data ---
 
@@ -77,13 +79,13 @@ const stats = [
 
 const teamMembers = [
     {
-        name: "Ikram Hossen",
-        role: "Founder & CEO",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop"
+        name: "Mahbubulla",
+        role: "Full-stack Engineer",
+        image: mahbubullaImg
     },
     {
         name: "Fazla Rabbi",
-        role: "Software Developer",
+        role: "Software Engineer",
         image: fazlaRabbiImg
     },
     {
@@ -92,9 +94,9 @@ const teamMembers = [
         image: aminulIslamImg
     },
     {
-        name: "Nabil Chowdhury",
+        name: "Shariful Islam",
         role: "SEO & Growth Lead",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800&auto=format&fit=crop"
+        image: sharifulIslamImg
     }
 ];
 
