@@ -3,25 +3,25 @@ import Button from '../../components/Button';
 
 const projects = [
     {
-        title: "Best AI Lead Gen",
-        category: "AI SaaS",
-        description: "A cutting-edge AI-powered lead generation platform that helps businesses identify, qualify, and convert high-value prospects automatically. Built with advanced machine learning pipelines and a sleek, intuitive dashboard.",
-        image: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=1200",
-        link: "#"
+        title: "AI Lead Generation Agency",
+        category: "AI Lead Generation",
+        description: "A cutting-edge AI-powered lead generation agency platform that helps businesses identify, qualify, and convert high-value prospects automatically with a sleek, intuitive interface.",
+        image: "https://res.cloudinary.com/dm1zvc99k/image/upload/v1774863593/Lead_agency_bm2swt.png",
+        link: "https://gitikram.github.io/ai-leads-gen-agency/"
     },
     {
-        title: "Creative Agency Inc",
-        category: "Creative Agency",
-        description: "A bold, immersive portfolio website for a top-tier creative agency. Featuring dynamic scroll animations, cinematic transitions, and a design language that speaks premium from the first pixel.",
-        image: "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&q=80&w=1200",
-        link: "#"
+        title: "AI Agentic Workflow Agency",
+        category: "AI Workflow Solutions",
+        description: "A modern, agentic workflow agency platform designed to streamline business operations. Featuring advanced AI integrations and dynamic user experiences for managing complex tasks effortlessly.",
+        image: "https://res.cloudinary.com/dm1zvc99k/image/upload/v1774863559/AI_workflow_u15nye.png",
+        link: "https://gitikram.github.io/ai-agentic-workflow-agency/"
     },
     {
-        title: "Nexus NFT Marketplace",
-        category: "Web3 / Crypto",
-        description: "A next-generation NFT marketplace with seamless wallet integration, real-time bidding, and a beautifully crafted gallery experience designed to showcase digital art at its finest.",
-        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1200",
-        link: "#"
+        title: "Modern Racing Car Website",
+        category: "Automotive Design",
+        description: "A high-performance, visually striking website for a modern racing car brand. Showcasing cinematic animations, dynamic scrolling, and a premium design language tailored for automotive enthusiasts.",
+        image: "https://res.cloudinary.com/dm1zvc99k/image/upload/v1774863589/Racing_car_x5wzvm.png",
+        link: "https://gitikram.github.io/modern-racing-car/"
     }
 ];
 
@@ -70,12 +70,14 @@ const Projects = () => {
                                         <p className="text-white/45 leading-relaxed mb-8 text-base md:text-lg">
                                             {project.description}
                                         </p>
-                                        <Button to={project.link}>
-                                            View Project
-                                            <svg className="w-4 h-4 inline-block ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                            </svg>
-                                        </Button>
+                                        <div className="mt-12">
+                                            <Button to={project.link}>
+                                                View Live Project
+                                                <svg className="w-4 h-4 inline-block ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                                </svg>
+                                            </Button>
+                                        </div>
                                     </div>
 
                                     {/* Screenshot Image */}

@@ -37,7 +37,7 @@ const Hero = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8">
-                    <Button className="w-full sm:w-auto">
+                    <Button href="https://calendar.app.google/ZpsRA6kSoBHSGfh59" className="w-full sm:w-auto inline-flex items-center justify-center">
                         Schedule a Call
                     </Button>
                     <button className="text-white/60 font-bold hover:text-white transition-colors flex items-center gap-2 group">

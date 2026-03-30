@@ -87,6 +87,19 @@ const FeedbackCTA = () => {
     return (
         <section className="section-padding px-6 overflow-hidden relative">
             <div className="max-w-6xl mx-auto glass-card p-10 md:p-32 rounded-[48px] md:rounded-[64px] text-center relative overflow-hidden animate-on-scroll">
+                {/* Background Video */}
+                <div className="absolute inset-0 z-0">
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-cover opacity-30 pointer-events-none"
+                    >
+                        <source src="https://res.cloudinary.com/dm1zvc99k/video/upload/v1774519109/red-abstrac-spining_2_t5hf2s.mp4" type="video/mp4" />
+                    </video>
+                </div>
+
                 {/* Background Glows */}
                 <div className="absolute top-0 right-0 w-80 h-80 bg-red-600/10 blur-[100px] z-[1]"></div>
                 <div className="absolute bottom-0 left-0 w-80 h-80 bg-red-600/5 blur-[100px] z-[1]"></div>
@@ -100,7 +113,7 @@ const FeedbackCTA = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8 relative z-10">
-                    <Button to="/contact" className="w-full sm:w-auto !px-16 !py-5 md:!text-lg">
+                    <Button href="https://calendar.app.google/ZpsRA6kSoBHSGfh59" className="w-full sm:w-auto !px-16 !py-5 md:!text-lg inline-flex items-center justify-center">
                         Schedule a Call
                     </Button>
                     <a href="#" className="text-white/60 font-bold hover:text-white transition-colors group">

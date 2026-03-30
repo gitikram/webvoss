@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../../components/Button';
-import rocketLaunchVideo from '../../assets/rocket-launch-video.mp4';
+
+const ctaVideoUrl = 'https://res.cloudinary.com/dm1zvc99k/video/upload/v1774519109/red-abstrac-spining_2_t5hf2s.mp4';
 
 const CTA = () => {
     return (
@@ -15,7 +16,7 @@ const CTA = () => {
                         playsInline
                         className="w-full h-full object-cover opacity-30 pointer-events-none"
                     >
-                        <source src={rocketLaunchVideo} type="video/mp4" />
+                        <source src={ctaVideoUrl} type="video/mp4" />
                     </video>
                 </div>
 
@@ -32,7 +33,7 @@ const CTA = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-5 md:gap-8 relative z-10">
-                    <Button className="w-full sm:w-auto !px-10 md:!px-16 !py-4 md:!py-5 md:!text-lg whitespace-nowrap">
+                    <Button href="https://calendar.app.google/ZpsRA6kSoBHSGfh59" className="w-full sm:w-auto !px-10 md:!px-16 !py-4 md:!py-5 md:!text-lg whitespace-nowrap inline-flex items-center justify-center">
                         Schedule a Call
                     </Button>
                     <a href="/contact" className="text-white/60 font-bold hover:text-white transition-colors group py-2 md:py-0">

@@ -42,9 +42,14 @@ const Navbar = () => {
                     {/* Actions */}
                     <div className="flex items-center gap-4">
                         {/* Desktop Only Button */}
-                        <button className="hidden md:block px-8 py-2.5 text-sm font-bold bg-white text-black rounded-full hover:bg-white/90 transition-all shadow-lg shadow-white/10 active:scale-95">
+                        <a 
+                            href="https://calendar.app.google/ZpsRA6kSoBHSGfh59" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="hidden md:flex items-center justify-center px-8 py-2.5 text-sm font-bold bg-white text-black rounded-full hover:bg-white/90 transition-all shadow-lg shadow-white/10 active:scale-95"
+                        >
                             Schedule a Call
-                        </button>
+                        </a>
 
                         {/* Hamburger */}
                         <button
@@ -75,9 +80,14 @@ const Navbar = () => {
 
                     {/* Mobile Only Button - Now under Contact Us */}
                     <div className="pt-2">
-                        <button className="w-full py-4 text-sm font-bold bg-white text-black rounded-full hover:bg-white/90 transition-all shadow-lg shadow-white/10 active:scale-95">
+                        <a 
+                            href="https://calendar.app.google/ZpsRA6kSoBHSGfh59" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="flex items-center justify-center w-full py-4 text-sm font-bold bg-white text-black rounded-full hover:bg-white/90 transition-all shadow-lg shadow-white/10 active:scale-95"
+                        >
                             Schedule a Call
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

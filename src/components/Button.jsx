@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Button = ({ children, className = "", to, ...props }) => {
+const Button = ({ children, className = "", to, href, ...props }) => {
     const classes = `shiny-cta-red ${className}`;
 
     if (to) {
@@ -9,6 +9,14 @@ const Button = ({ children, className = "", to, ...props }) => {
             <Link to={to} className={classes} {...props}>
                 {children}
             </Link>
+        );
+    }
+
+    if (href) {
+        return (
+            <a href={href} target="_blank" rel="noopener noreferrer" className={classes} {...props}>
+                {children}
+            </a>
         );
     }
 
