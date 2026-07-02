@@ -12,11 +12,27 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:wght@100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" />
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
-  <script type="module" crossorigin src="/assets/index-BfWOjgIl.js"></script>
+  <script type="module" crossorigin src="/assets/index-DfXwJbDP.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-CWQR49Un.css">
 </head>
 
 <body>
+  <script>
+    // Single Page Apps redirect for GitHub Pages
+    // MIT License - https://github.com/rafgraph/spa-github-pages
+    (function (l) {
+      if (l.search[0] === '?') {
+        var decoded = l.search
+          .slice(1)
+          .split('&')
+          .map(function (s) {
+            return s.replace(/~and~/g, '&');
+          })
+          .join('?');
+        window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+      }
+    }(window.location));
+  </script>
   <div id="root"></div>
 </body>
 
